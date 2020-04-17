@@ -1,0 +1,227 @@
+<!-- Start Top Bar style2 -->
+<section class="top-bar-style2">
+  <div class="top-style2 clearfix">
+    <div class="top-style2-left">
+      <p><span class="icon-music"></span>We have Answers</p>
+      <ul>
+        <li>+324 123 45 978</li>
+        <li>abc@yourdomain.com</li>
+        <li>Mon - Sat: 9am to 6pm</li>
+      </ul>
+    </div>
+    <div class="top-style2-right">
+      <ul class="top-right-menu">
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">360O View</a></li>
+        <li><a [routerLink]="['/faq']">FAQ</a></li>
+      </ul>
+      <ul class="topbar-social-links">
+        <li>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- End Top Bar style2 -->
+
+<!--Start Main Header-->
+<header class="main-header header-style2 stricky">
+  <div class="inner-container clearfix">
+    <div class="logo-box-style2 float-left">
+      <a [routerLink]="['/home']">
+        <img src="assets/images/resources/logo.png" alt="Awesome Logo" />
+      </a>
+    </div>
+    <div class="main-menu-box float-right">
+      <nav class="main-menu style2 clearfix">
+        <div class="navbar-header clearfix">
+          <button
+            type="button"
+            id="toggle"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="coll" class="navbar-collapse collapse clearfix">
+          <ul class="navigation clearfix">
+            <li routerLinkActive="current">
+              <a [routerLink]="['/home']" id="0">Home</a>
+            </li>
+
+            <li class="dropdown" routerLinkActive="current">
+              <a id="1">About Us</a>
+              <ul id="2">
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/about']" id="120">About Company</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/faq']" id="130">FAQ’s</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/soon']" id="140">Coming Soon</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/404']" id="150">Error Page</a>
+                </li>
+              </ul>
+              <div class="dropdown-btn" id="50"></div>
+            </li>
+
+            <li routerLinkActive="current" class="dropdown">
+              <a id="20">Services</a>
+              <ul id="30">
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/serveces']" id="160">View All Services</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/condesigns']" id="170">Concept Designs</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/prodesigns']" id="180">Project Designs</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/makeovers']" id="190">Make Overs</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/consulting']" id="200">Consulting</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/glasswrought']" id="210"
+                    >Glass & Wrought</a
+                  >
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/spaceplanning']" id="220"
+                    >Space Planning</a
+                  >
+                </li>
+              </ul>
+              <div class="dropdown-btn" id="51"></div>
+            </li>
+
+            <li routerLinkActive="current" class="dropdown">
+              <a id="21">Projects </a>
+              <ul id="31">
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/classic1']" id="230">Classic View 01</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/classic2']" id="240">Classic View 02</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/modern1']" id="250">Modern View 01</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/modern2']" id="260">Modern View 02</a>
+                </li>
+                <li routerLinkActive="current" id="270">
+                  <a [routerLink]="['/fwidth1']" id="280">Fullwidth 01</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/fwidth2']" id="290">Fulldwidth 02</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/singleproject']" id="300"
+                    >Projects Single</a
+                  >
+                </li>
+              </ul>
+              <div class="dropdown-btn" id="52"></div>
+            </li>
+
+            <li routerLinkActive="current" class="dropdown">
+              <a id="22">Blog</a>
+              <ul id="32">
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/BGV']" id="310">Blog Grid View</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/BWS']" id="320">Blog With Sidebar</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/singleblog']" id="330"
+                    >Blog Single Post</a
+                  >
+                </li>
+              </ul>
+              <div class="dropdown-btn" id="53"></div>
+            </li>
+
+            <li routerLinkActive="current" class="dropdown">
+              <a id="23">Shop</a>
+              <ul id="33">
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/ourproducts']" id="340">Our Products</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/singleproducts']" id="350"
+                    >Products Single</a
+                  >
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/shoppingcard']" id="360">Shopping Cart</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/checkout']" id="370">Checkout</a>
+                </li>
+                <li routerLinkActive="current">
+                  <a [routerLink]="['/myaccount']" id="380">My Account</a>
+                </li>
+              </ul>
+              <div class="dropdown-btn" id="54"></div>
+            </li>
+
+            <li><a [routerLink]="['/404']" id="00">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mainmenu-right style2">
+        <div class="outer-search-box">
+          <div class="seach-toggle"><i class="fa fa-search"></i></div>
+          <ul class="search-box">
+            <li>
+              <form method="post" action="#">
+                <div class="form-group">
+                  <input
+                    type="search"
+                    name="search"
+                    placeholder="Search Here"
+                    required
+                  />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-box">
+          <a [routerLink]="['/404']"
+            ><span class="icon-bag"><span class="number">0</span></span></a
+          >
+        </div>
+        <div class="button">
+          <a class="btn-one" [routerLink]="['/checkout']"
+            >Get a Quote<span class="flaticon-next"></span
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--End Main Header-->
