@@ -415,12 +415,6 @@ h6 {font-family: 'Markazi Text', serif !important;}
 function changeLanguageAr() {
   document.head.appendChild(style);
 
-  /* $("#arabic").click(function () {
-console.log("hi");
-$("#arabic").addClass("active");
-$("#english").removeClass("active");
-}); */
-
   /*******************end add language************* */
 }
 function changeLanguageEn() {
