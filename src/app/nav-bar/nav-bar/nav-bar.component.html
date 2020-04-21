@@ -2,19 +2,27 @@
 <section class="top-bar-style2">
   <div class="top-style2 clearfix">
     <div class="top-style2-left">
-      <p><span class="icon-music"></span>We have Answers</p>
+      <p><span class="icon-music"></span>{{ "NAV-BAR.ANSWERS" | translate }}</p>
       <ul>
         <li>+324 123 45 978</li>
         <li>abc@yourdomain.com</li>
-        <li>Mon - Sat: 9am to 6pm</li>
+        <li>{{ "NAV-BAR.TIME" | translate }}</li>
       </ul>
     </div>
     <div class="top-style2-right">
       <ul class="top-right-menu">
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Media</a></li>
-        <li><a href="#">360O View</a></li>
-        <li><a [routerLink]="['/faq']">FAQ</a></li>
+        <li>
+          <a href="#">{{ "NAV-BAR.Partners" | translate }}</a>
+        </li>
+        <li>
+          <a href="#">{{ "NAV-BAR.Media" | translate }}</a>
+        </li>
+        <li>
+          <a href="#">{{ "NAV-BAR.View" | translate }}</a>
+        </li>
+        <li>
+          <a [routerLink]="['/faq']">{{ "NAV-BAR.FAQ" | translate }}</a>
+        </li>
       </ul>
       <ul class="topbar-social-links">
         <li>
@@ -61,133 +69,203 @@
         <div id="coll" class="navbar-collapse collapse clearfix">
           <ul class="navigation clearfix">
             <li routerLinkActive="current">
-              <a [routerLink]="['/home']" id="0">Home</a>
+              <a [routerLink]="['/home']" id="home">{{
+                "NAV-BAR.HOME" | translate
+              }}</a>
             </li>
 
             <li class="dropdown" routerLinkActive="current">
-              <a id="1">About Us</a>
-              <ul id="2">
+              <a id="about-us">{{ "NAV-BAR.About-Us" | translate }}</a>
+              <ul id="about-us-ul">
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/about']" id="120">About Company</a>
+                  <a [routerLink]="['/about']" id="about-company">{{
+                    "NAV-BAR.About-Company" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/faq']" id="130">FAQ’s</a>
+                  <a [routerLink]="['/faq']" id="faq">{{
+                    "NAV-BAR.FAQ’s" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/soon']" id="140">Coming Soon</a>
+                  <a [routerLink]="['/soon']" id="soon">{{
+                    "NAV-BAR.Coming-Soon" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/404']" id="150">Error Page</a>
+                  <a [routerLink]="['/404']" id="error-page">{{
+                    "NAV-BAR.Error-Page" | translate
+                  }}</a>
                 </li>
               </ul>
-              <div class="dropdown-btn" id="50"></div>
+              <div class="dropdown-btn" id="about-us-btn"></div>
             </li>
 
             <li routerLinkActive="current" class="dropdown">
-              <a id="20">Services</a>
-              <ul id="30">
+              <a id="services">{{ "NAV-BAR.Services" | translate }}</a>
+              <ul id="services-ul">
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/serveces']" id="160">View All Services</a>
+                  <a [routerLink]="['/serveces']" id="all-services">{{
+                    "NAV-BAR.View-All-Services" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/condesigns']" id="170">Concept Designs</a>
+                  <a [routerLink]="['/condesigns']" id="cons-design">{{
+                    "NAV-BAR.Concept-Designs" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/prodesigns']" id="180">Project Designs</a>
+                  <a [routerLink]="['/prodesigns']" id="proj-design">{{
+                    "NAV-BAR.Project-Designs" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/makeovers']" id="190">Make Overs</a>
+                  <a [routerLink]="['/makeovers']" id="make-overs">{{
+                    "NAV-BAR.Make-Overs" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/consulting']" id="200">Consulting</a>
+                  <a [routerLink]="['/consulting']" id="consulting">{{
+                    "NAV-BAR.Consulting" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/glasswrought']" id="210"
-                    >Glass & Wrought</a
-                  >
+                  <a [routerLink]="['/glasswrought']" id="glas-wrought">{{
+                    "NAV-BAR.Glass&Wrought" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/spaceplanning']" id="220"
-                    >Space Planning</a
-                  >
+                  <a [routerLink]="['/spaceplanning']" id="space-planning">{{
+                    "NAV-BAR.Space-Planning" | translate
+                  }}</a>
                 </li>
               </ul>
-              <div class="dropdown-btn" id="51"></div>
+              <div class="dropdown-btn" id="services-btn"></div>
             </li>
 
             <li routerLinkActive="current" class="dropdown">
-              <a id="21">Projects </a>
-              <ul id="31">
+              <a id="projects">{{ "NAV-BAR.Projects" | translate }} </a>
+              <ul id="projects-ul">
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/classic1']" id="230">Classic View 01</a>
+                  <a [routerLink]="['/classic1']" id="classic1">{{
+                    "NAV-BAR.Classic-View-01" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/classic2']" id="240">Classic View 02</a>
+                  <a [routerLink]="['/classic2']" id="classic2">{{
+                    "NAV-BAR.Classic-View-02" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/modern1']" id="250">Modern View 01</a>
+                  <a [routerLink]="['/modern1']" id="modern1">{{
+                    "NAV-BAR.Modern-View-01" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/modern2']" id="260">Modern View 02</a>
+                  <a [routerLink]="['/modern2']" id="modern2">{{
+                    "NAV-BAR.Modern-View-02" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current" id="270">
-                  <a [routerLink]="['/fwidth1']" id="280">Fullwidth 01</a>
+                  <a [routerLink]="['/fwidth1']" id="fwidth1">{{
+                    "NAV-BAR.Fullwidth-01" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/fwidth2']" id="290">Fulldwidth 02</a>
+                  <a [routerLink]="['/fwidth2']" id="fwidth2">{{
+                    "NAV-BAR.Fulldwidth-02" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/singleproject']" id="300"
-                    >Projects Single</a
-                  >
+                  <a [routerLink]="['/singleproject']" id="singleproject">{{
+                    "NAV-BAR.Projects-Single" | translate
+                  }}</a>
                 </li>
               </ul>
-              <div class="dropdown-btn" id="52"></div>
+              <div class="dropdown-btn" id="projects-btn"></div>
             </li>
 
             <li routerLinkActive="current" class="dropdown">
-              <a id="22">Blog</a>
-              <ul id="32">
+              <a id="blog">{{ "NAV-BAR.Blog" | translate }}</a>
+              <ul id="blog-ul">
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/BGV']" id="310">Blog Grid View</a>
+                  <a [routerLink]="['/BGV']" id="BGV">{{
+                    "NAV-BAR.Blog-Grid-View" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/BWS']" id="320">Blog With Sidebar</a>
+                  <a [routerLink]="['/BWS']" id="BWS">{{
+                    "NAV-BAR.Blog-With-Sidebar" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/singleblog']" id="330"
-                    >Blog Single Post</a
-                  >
+                  <a [routerLink]="['/singleblog']" id="singleblog">{{
+                    "NAV-BAR.Blog-Single-Post" | translate
+                  }}</a>
                 </li>
               </ul>
-              <div class="dropdown-btn" id="53"></div>
+              <div class="dropdown-btn" id="blog-btn"></div>
             </li>
 
             <li routerLinkActive="current" class="dropdown">
-              <a id="23">Shop</a>
-              <ul id="33">
+              <a id="shop">{{ "NAV-BAR.Shop" | translate }}</a>
+              <ul id="shop-ul">
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/ourproducts']" id="340">Our Products</a>
+                  <a [routerLink]="['/ourproducts']" id="ourproducts">{{
+                    "NAV-BAR.Our-roducts" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/singleproducts']" id="350"
-                    >Products Single</a
-                  >
+                  <a [routerLink]="['/singleproducts']" id="singleproducts">{{
+                    "NAV-BAR.Products-Single" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/shoppingcard']" id="360">Shopping Cart</a>
+                  <a [routerLink]="['/shoppingcard']" id="shoppingcard">{{
+                    "NAV-BAR.Shopping-Cart" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/checkout']" id="370">Checkout</a>
+                  <a [routerLink]="['/checkout']" id="checkout">{{
+                    "NAV-BAR.Checkout" | translate
+                  }}</a>
                 </li>
                 <li routerLinkActive="current">
-                  <a [routerLink]="['/myaccount']" id="380">My Account</a>
+                  <a [routerLink]="['/myaccount']" id="myaccount">{{
+                    "NAV-BAR.My-Account" | translate
+                  }}</a>
                 </li>
               </ul>
-              <div class="dropdown-btn" id="54"></div>
+              <div class="dropdown-btn" id="shop-btn"></div>
+            </li>
+            <li routerLinkActive="current" class="dropdown">
+              <a id="language">{{ "NAV-BAR.Language" | translate }} </a>
+              <ul id="language-ul">
+                <li>
+                  <a
+                    class="en"
+                    (click)="addEn(); switchLanguage('en')"
+                    id="english"
+                    >{{ "NAV-BAR.English" | translate }}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="ar"
+                    (click)="addAr(); switchLanguage('ar')"
+                    id="arabic"
+                    >{{ "NAV-BAR.Arabic" | translate }}</a
+                  >
+                </li>
+              </ul>
+              <div class="dropdown-btn" id="language-btn"></div>
             </li>
 
-            <li><a [routerLink]="['/404']" id="00">Contact</a></li>
+            <li>
+              <a [routerLink]="['/404']" id="contact">{{
+                "NAV-BAR.Contact" | translate
+              }}</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -214,11 +292,6 @@
           <a [routerLink]="['/404']"
             ><span class="icon-bag"><span class="number">0</span></span></a
           >
-        </div>
-        <div class="button">
-          <a class="btn-one" [routerLink]="['/checkout']"
-            >Get a Quote<span class="flaticon-next"></span
-          ></a>
         </div>
       </div>
     </div>

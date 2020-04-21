@@ -24,7 +24,7 @@ export const slideInAnimation = trigger("slideInAnimation", [
         ":enter",
         [
           style({ transform: "translateX(100%)" }),
-          animate("1s ease-out", style({ transform: "translateX(0%)" })),
+          animate("0.75s ease-out", style({ transform: "translateX(0%)" })),
         ],
         { optional: true }
       ),
@@ -32,7 +32,7 @@ export const slideInAnimation = trigger("slideInAnimation", [
         ":leave",
         [
           style({ transform: "translateX(0%)" }),
-          animate("1s ease-out", style({ transform: "translateX(-100%)" })),
+          animate("0.8s ease-out", style({ transform: "translateX(-100%)" })),
         ],
         { optional: true }
       ),

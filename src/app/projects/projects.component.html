@@ -8,14 +8,24 @@
       <div class="col-xl-12">
         <div class="inner-content-box clearfix">
           <div class="title-s2 text-center">
-            <span>Traditional</span>
-            <h1>Office Partition Walls</h1>
+            <span>{{ "CLASSIC1.Traditional" | translate }}</span>
+            <h1>{{ "CLASSIC1.Office Partition Walls" | translate }}</h1>
           </div>
           <div class="breadcrumb-menu float-left">
             <ul class="clearfix">
-              <li><a [routerLink]="['/home']">Home</a></li>
-              <li><a [routerLink]="['/classic1']">Projects</a></li>
-              <li class="active">Single Project</li>
+              <li>
+                <a [routerLink]="['/home']">{{
+                  "CLASSIC1.Home" | translate
+                }}</a>
+              </li>
+              <li>
+                <a [routerLink]="['/classic1']">{{
+                  "CLASSIC1.Projects" | translate
+                }}</a>
+              </li>
+              <li class="active">
+                {{ "CLASSIC1.Single Project" | translate }}
+              </li>
             </ul>
           </div>
         </div>
@@ -50,31 +60,33 @@
       <div class="col-xl-7">
         <div class="project-description-content">
           <div class="sec-title">
-            <p>Description</p>
+            <p>{{ "CLASSIC1.Description" | translate }}</p>
             <div class="title">
-              similique sunt<br />
-              qui officia deserunt
+              {{ "CLASSIC1.similique sunt" | translate }}<br />
+              {{ "CLASSIC1.qui officia deserunt" | translate }}
             </div>
           </div>
           <div class="inner-content">
-            <p>
-              Idea of denouncing pleasures and praising pain was born will give
-              you a com-pleted account system, and expound the actual teachings
-              of the great explorer of the truth, the master builder of human
-              happiness. No one rejects, dislikes, or avoids pleasure itself,
-              because it is pleasure.
-            </p>
+            <p>{{ "CLASSIC1.P1" | translate }}</p>
             <div class="bottpm-text">
-              <p>
-                Because those who do not know how pursue, Complete account that
-                all system, expound the actual teachings of the great explorer
-                of the truth,
-              </p>
+              <p>{{ "CLASSIC1.P2" | translate }}</p>
             </div>
             <ul>
-              <li>Nam libero tempore, cum soluta</li>
-              <li>Est eligendi optio cumque nihil impedit quo</li>
-              <li>Omnis dolor repellendus temporibus autem</li>
+              <li>
+                {{ "CLASSIC1.Nam libero tempore, cum soluta" | translate }}
+              </li>
+              <li>
+                {{
+                  "CLASSIC1.Est eligendi optio cumque nihil impedit quo"
+                    | translate
+                }}
+              </li>
+              <li>
+                {{
+                  "CLASSIC1.Omnis dolor repellendus temporibus autem"
+                    | translate
+                }}
+              </li>
             </ul>
           </div>
         </div>
@@ -98,7 +110,7 @@
       <div class="col-xl-6">
         <div class="project-info-content">
           <div class="project-info-title">
-            <h3>Project Info</h3>
+            <h3>{{ "CLASSIC1.Project Info" | translate }}</h3>
           </div>
           <div class="inner-content">
             <ul>
@@ -107,8 +119,10 @@
                   <span class="icon-maps-and-location1"></span>
                 </div>
                 <div class="title">
-                  <h4>Location</h4>
-                  <span>New York United States</span>
+                  <h4>{{ "CLASSIC1.Location" | translate }}</h4>
+                  <span>{{
+                    "CLASSIC1.New York United States" | translate
+                  }}</span>
                 </div>
               </li>
               <li>
@@ -116,7 +130,7 @@
                   <span class="icon-ruler"></span>
                 </div>
                 <div class="title">
-                  <h4>Square Meters</h4>
+                  <h4>{{ "CLASSIC1.Square Meters" | translate }}</h4>
                   <span>452,65m<sup>2</sup></span>
                 </div>
               </li>
@@ -125,7 +139,7 @@
                   <span class="icon-calendar"></span>
                 </div>
                 <div class="title">
-                  <h4>Project Year</h4>
+                  <h4>{{ "CLASSIC1.Project Year" | translate }}</h4>
                   <span>2018</span>
                 </div>
               </li>
@@ -134,7 +148,7 @@
                   <span class="icon-price"></span>
                 </div>
                 <div class="title">
-                  <h4>Price Value</h4>
+                  <h4>{{ "CLASSIC1.Price Value" | translate }}</h4>
                   <span>$65m</span>
                 </div>
               </li>
@@ -143,8 +157,8 @@
                   <span class="icon-group"></span>
                 </div>
                 <div class="title">
-                  <h4>Project Head</h4>
-                  <span>Mr. John Meckency</span>
+                  <h4>{{ "CLASSIC1.Project Head" | translate }}</h4>
+                  <span>{{ "CLASSIC1.Mr. John Meckency" | translate }}</span>
                 </div>
               </li>
             </ul>
@@ -210,7 +224,7 @@
 <section class="similar-projects-area">
   <div class="container-fluid similar-projects-content">
     <div class="similar-project-title text-center">
-      <h2>Similar projects</h2>
+      <h2>{{ "CLASSIC1.Similar projects" | translate }}</h2>
     </div>
     <div class="row">
       <!--Start Single Similar Project-->
@@ -223,8 +237,12 @@
             />
           </div>
           <div class="title-holder">
-            <span>Contemporary</span>
-            <h3><a [routerLink]="['/singleproject']" >Nathan Brooke House</a></h3>
+            <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleproject']">{{
+                "CLASSIC1.Nathan Brooke House" | translate
+              }}</a>
+            </h3>
           </div>
         </div>
       </div>
@@ -239,8 +257,12 @@
             />
           </div>
           <div class="title-holder">
-            <span>Modern Design</span>
-            <h3><a [routerLink]="['/singleproject']" >State Hermitage Museum</a></h3>
+            <span>{{ "CLASSIC1.Modern Design" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleproject']">{{
+                "CLASSIC1.State Hermitage Museum" | translate
+              }}</a>
+            </h3>
           </div>
         </div>
       </div>
@@ -255,8 +277,12 @@
             />
           </div>
           <div class="title-holder">
-            <span>Traditional</span>
-            <h3><a [routerLink]="['/singleproject']" >Central City Building</a></h3>
+            <span>{{ "CLASSIC1.Traditional" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleproject']">{{
+                "CLASSIC1.Central City Building" | translate
+              }}</a>
+            </h3>
           </div>
         </div>
       </div>
@@ -271,8 +297,12 @@
             />
           </div>
           <div class="title-holder">
-            <span>Retreat</span>
-            <h3><a [routerLink]="['/singleproject']" >Central Florida University</a></h3>
+            <span>{{ "CLASSIC1.Retreat" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleproject']"
+                >{{ "CLASSIC1.Central Florida University" | translate }}
+              </a>
+            </h3>
           </div>
         </div>
       </div>
@@ -281,3 +311,4 @@
   </div>
 </section>
 <!--End Similar projects Area-->
+<app-footer></app-footer>

@@ -8,14 +8,24 @@
       <div class="col-xl-12">
         <div class="inner-content-box clearfix">
           <div class="title-s2 text-center">
-            <span>Our Projects</span>
-            <h1>More than 2300 Projects</h1>
+            <span>{{ "CLASSIC1.Our Projects" | translate }}</span>
+            <h1>{{ "CLASSIC1.More than 2300 Projects" | translate }}</h1>
           </div>
           <div class="breadcrumb-menu float-left">
             <ul class="clearfix">
-              <li><a [routerLink]="['/home']">Home</a></li>
-              <li><a [routerLink]="['/classic1']">Projects</a></li>
-              <li class="active">Classic View V2</li>
+              <li>
+                <a [routerLink]="['/home']">{{
+                  "CLASSIC1.Home" | translate
+                }}</a>
+              </li>
+              <li>
+                <a [routerLink]="['/classic1']">{{
+                  "CLASSIC1.Projects" | translate
+                }}</a>
+              </li>
+              <li class="active">
+                {{ "CLASSIC1.Classic View V2" | translate }}
+              </li>
             </ul>
           </div>
         </div>
@@ -30,14 +40,26 @@
   <div class="container">
     <ul class="project-filter post-filter has-dynamic-filters-counter">
       <li data-filter=".filter-item" class="active">
-        <span class="filter-text">All Projects</span>
+        <span class="filter-text">{{
+          "CLASSIC1.All Projects" | translate
+        }}</span>
       </li>
-      <li data-filter=".mod"><span class="filter-text">Modern</span></li>
+      <li data-filter=".mod">
+        <span class="filter-text">{{ "CLASSIC1.Modern" | translate }}</span>
+      </li>
       <li data-filter=".contem">
-        <span class="filter-text">Contemporary</span>
+        <span class="filter-text">{{
+          "CLASSIC1.Contemporary" | translate
+        }}</span>
       </li>
-      <li data-filter=".trad"><span class="filter-text">Traditional</span></li>
-      <li data-filter=".ret"><span class="filter-text">Retreat</span></li>
+      <li data-filter=".trad">
+        <span class="filter-text">{{
+          "CLASSIC1.Traditional" | translate
+        }}</span>
+      </li>
+      <li data-filter=".ret">
+        <span class="filter-text">{{ "CLASSIC1.Retreat" | translate }}</span>
+      </li>
     </ul>
     <div class="row filter-layout masonary-layout">
       <!--Start single project item-->
@@ -58,8 +80,12 @@
             </div>
           </div>
           <div class="title">
-            <span>Modern Design</span>
-            <h3><a [routerLink]="['/singleblog']">Art Family Residence</a></h3>
+            <span>{{ "CLASSIC1.Modern Design" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleblog']">{{
+                "CLASSIC1.Art Family Residence" | translate
+              }}</a>
+            </h3>
           </div>
         </div>
       </div>
@@ -82,8 +108,12 @@
             </div>
           </div>
           <div class="title">
-            <span>Contemporary</span>
-            <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
+            <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleblog']">{{
+                "CLASSIC1.Nathan Brooke House" | translate
+              }}</a>
+            </h3>
           </div>
         </div>
       </div>
@@ -106,9 +136,11 @@
             </div>
           </div>
           <div class="title">
-            <span>Traditional</span>
+            <span>{{ "CLASSIC1.Traditional" | translate }}</span>
             <h3>
-              <a [routerLink]="['/singleblog']">Office Partition Walls</a>
+              <a [routerLink]="['/singleblog']">{{
+                "CLASSIC1.Office Partition Walls" | translate
+              }}</a>
             </h3>
           </div>
         </div>
@@ -133,8 +165,12 @@
             </div>
           </div>
           <div class="title">
-            <span>Contemporary</span>
-            <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
+            <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleblog']">{{
+                "CLASSIC1.Nathan Brooke House" | translate
+              }}</a>
+            </h3>
           </div>
         </div>
       </div>
@@ -157,9 +193,11 @@
             </div>
           </div>
           <div class="title">
-            <span>Traditional</span>
+            <span>{{ "CLASSIC1.Traditional" | translate }}</span>
             <h3>
-              <a [routerLink]="['/singleblog']">Office Partition Walls</a>
+              <a [routerLink]="['/singleblog']">{{
+                "CLASSIC1.Office Partition Walls" | translate
+              }}</a>
             </h3>
           </div>
         </div>
@@ -183,8 +221,12 @@
             </div>
           </div>
           <div class="title">
-            <span>Modern Design</span>
-            <h3><a [routerLink]="['/singleblog']">Art Family Residence</a></h3>
+            <span>{{ "CLASSIC1.Modern Design" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleblog']">{{
+                "CLASSIC1.Art Family Residence" | translate
+              }}</a>
+            </h3>
           </div>
         </div>
       </div>
@@ -208,9 +250,11 @@
             </div>
           </div>
           <div class="title">
-            <span>Traditional</span>
+            <span>{{ "CLASSIC1.Traditional" | translate }}</span>
             <h3>
-              <a [routerLink]="['/singleblog']">Office Partition Walls</a>
+              <a [routerLink]="['/singleblog']">{{
+                "CLASSIC1.Office Partition Walls" | translate
+              }}</a>
             </h3>
           </div>
         </div>
@@ -234,8 +278,12 @@
             </div>
           </div>
           <div class="title">
-            <span>Modern Design</span>
-            <h3><a [routerLink]="['/singleblog']">Art Family Residence</a></h3>
+            <span>{{ "CLASSIC1.Modern Design" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleblog']">{{
+                "CLASSIC1.Art Family Residence" | translate
+              }}</a>
+            </h3>
           </div>
         </div>
       </div>
@@ -258,8 +306,12 @@
             </div>
           </div>
           <div class="title">
-            <span>Contemporary</span>
-            <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
+            <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+            <h3>
+              <a [routerLink]="['/singleblog']">{{
+                "CLASSIC1.Nathan Brooke House" | translate
+              }}</a>
+            </h3>
           </div>
         </div>
       </div>

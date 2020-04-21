@@ -8,13 +8,13 @@
       <div class="col-xl-12">
         <div class="inner-content-box clearfix">
           <div class="title-s2 text-center">
-            <span>Error Page</span>
-            <h1>Page Not Found</h1>
+            <span>{{ "ERROR.Error Page" | translate }}</span>
+            <h1>{{ "ERROR.Page Not Found" | translate }}</h1>
           </div>
           <div class="breadcrumb-menu float-left">
             <ul class="clearfix">
               <li><a [routerLink]="['/home']"></a></li>
-              <li class="active">Error Page</li>
+              <li class="active">{{ "ERROR.Error Page" | translate }}</li>
             </ul>
           </div>
         </div>
@@ -30,14 +30,15 @@
     <div class="row">
       <div class="col-xl-12">
         <div class="error-content text-center">
-          <span>Page Not Found</span>
+          <span>{{ "ERROR.Page Not Found" | translate }}</span>
           <div class="title">404</div>
           <p>
-            We’re unable to find a page you are looking for, Try later or click
-            the button.
+            {{ "ERROR.P1" | translate }}
           </p>
           <div class="button">
-            <a class="btn-one" [routerLink]="['/home']">Back to Home</a>
+            <a class="btn-one" [routerLink]="['/home']">{{
+              "ERROR.Back to Home" | translate
+            }}</a>
           </div>
         </div>
       </div>

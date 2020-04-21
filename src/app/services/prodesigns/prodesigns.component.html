@@ -8,14 +8,24 @@
       <div class="col-xl-12">
         <div class="inner-content-box clearfix">
           <div class="title-s2 text-center">
-            <span>Single Service</span>
-            <h1>Project Designs</h1>
+            <span>{{ "CONSULTING.Single Service" | translate }}</span>
+            <h1>{{ "CONSULTING.Project Designs" | translate }}</h1>
           </div>
           <div class="breadcrumb-menu float-left">
             <ul class="clearfix">
-              <li><a [routerLink]="['/home']">Home</a></li>
-              <li><a [routerLink]="['/services']">Services</a></li>
-              <li class="active">Single Service</li>
+              <li>
+                <a [routerLink]="['/home']">{{
+                  "CONSULTING.Home" | translate
+                }}</a>
+              </li>
+              <li>
+                <a [routerLink]="['/serveces']">{{
+                  "CONSULTING.Services" | translate
+                }}</a>
+              </li>
+              <li class="active">
+                {{ "CONSULTING.Single Service" | translate }}
+              </li>
             </ul>
           </div>
         </div>
@@ -37,9 +47,11 @@
               <li>
                 <a [routerLink]="['/condesigns']">
                   <div class="title">
-                    <h3 class="static">Concept Designs</h3>
+                    <h3 class="static">
+                      {{ "CONSULTING.Concept Designs" | translate }}
+                    </h3>
                     <div class="overlay-title">
-                      <h3>Concept Designs</h3>
+                      <h3>{{ "CONSULTING.Concept Designs" | translate }}</h3>
                     </div>
                   </div>
                 </a>
@@ -47,9 +59,11 @@
               <li class="active">
                 <a [routerLink]="['/prodesigns']">
                   <div class="title">
-                    <h3 class="static">Project Designs</h3>
+                    <h3 class="static">
+                      {{ "CONSULTING.Project Designs" | translate }}
+                    </h3>
                     <div class="overlay-title">
-                      <h3>Project Designs</h3>
+                      <h3>{{ "CONSULTING.Project Designs" | translate }}</h3>
                     </div>
                   </div>
                 </a>
@@ -57,9 +71,11 @@
               <li>
                 <a [routerLink]="['/makeovers']">
                   <div class="title">
-                    <h3 class="static">Make Overs</h3>
+                    <h3 class="static">
+                      {{ "CONSULTING.Make Overs" | translate }}
+                    </h3>
                     <div class="overlay-title">
-                      <h3>Make Overs</h3>
+                      <h3>{{ "CONSULTING.Make Overs" | translate }}</h3>
                     </div>
                   </div>
                 </a>
@@ -67,9 +83,11 @@
               <li>
                 <a [routerLink]="['/consulting']">
                   <div class="title">
-                    <h3 class="static">Consulting</h3>
+                    <h3 class="static">
+                      {{ "CONSULTING.Consulting" | translate }}
+                    </h3>
                     <div class="overlay-title">
-                      <h3>Consulting</h3>
+                      <h3>{{ "CONSULTING.Consulting" | translate }}</h3>
                     </div>
                   </div>
                 </a>
@@ -77,9 +95,11 @@
               <li>
                 <a [routerLink]="['/glasswrought']">
                   <div class="title">
-                    <h3 class="static">Glass & Wrought</h3>
+                    <h3 class="static">
+                      {{ "CONSULTING.Glass & Wrought" | translate }}
+                    </h3>
                     <div class="overlay-title">
-                      <h3>Glass & Wrought</h3>
+                      <h3>{{ "CONSULTING.Glass & Wrought" | translate }}</h3>
                     </div>
                   </div>
                 </a>
@@ -87,9 +107,11 @@
               <li>
                 <a [routerLink]="['/spaceplanning']">
                   <div class="title">
-                    <h3 class="static">Space Planning</h3>
+                    <h3 class="static">
+                      {{ "CONSULTING.Space Planning" | translate }}
+                    </h3>
                     <div class="overlay-title">
-                      <h3>Space Planning</h3>
+                      <h3>{{ "CONSULTING.Space Planning" | translate }}</h3>
                     </div>
                   </div>
                 </a>
@@ -103,8 +125,8 @@
                 <span class="icon-support1"></span>
               </div>
               <h3>
-                Consult with expert &<br />
-                Start today
+                {{ "CONSULTING.Consult with expert &" | translate }}<br />
+                {{ "CONSULTING.Start today" | translate }}
               </h3>
               <div class="bottom-box">
                 <h2>+888 56 78 9012</h2>
@@ -116,7 +138,7 @@
                   data-wow-delay="0ms"
                   data-wow-duration="1500ms"
                   [routerLink]="['/checkout']"
-                  >Make Appointment
+                  >{{ "CONSULTING.Make Appointment" | translate }}
                   <span class="flaticon-next"></span>
                 </a>
               </div>
@@ -127,7 +149,10 @@
             <ul class="service-pack-download">
               <li class="clearfix">
                 <div class="title-holder">
-                  <a href="#">Download.PDF <span>(150kb)</span></a>
+                  <a href="#"
+                    >{{ "CONSULTING.Download.PDF" | translate }}
+                    <span>(150kb)</span></a
+                  >
                 </div>
                 <div class="icon-holder">
                   <i class="fa fa-download" aria-hidden="true"></i>
@@ -147,20 +172,10 @@
             />
           </div>
           <div class="text">
-            <h2>Project Designs</h2>
+            <h2>{{ "CONSULTING.Project Designs" | translate }}</h2>
             <div class="inner">
-              <p>
-                Welcomed and every pain avoided. But in certain circumstances
-                and owing too the claims off duty bligations of business it will
-                frequently occur that pleasures have to be repudiated &
-                annoyances that accepted. That is wise man therefore always
-                holds indignation and dislike men who are so beguiled.
-              </p>
-              <p>
-                Certain circumstances and owing to the claims of duty bligations
-                of business it will frequently occurs all that pleasures have to
-                be repudiated & annoyances that accepted.
-              </p>
+              <p>{{ "CONSULTING.P1" | translate }}</p>
+              <p>{{ "CONSULTING.P2" | translate }}</p>
             </div>
           </div>
         </div>
@@ -177,18 +192,16 @@
                     </div>
                     <div class="title">
                       <h3>
-                        Interior<br />
-                        Expertise
+                        {{ "CONSULTING.Interior" | translate }} <br />{{
+                          "CONSULTING.Expertise" | translate
+                        }}
                       </h3>
                     </div>
                   </div>
                   <div class="overlay-text">
                     <div class="box">
                       <div class="inner-text">
-                        <p>
-                          Have to accepted That is wise man of therefore always
-                          we indignation.
-                        </p>
+                        <p>{{ "CONSULTING.P3" | translate }}</p>
                       </div>
                     </div>
                   </div>
@@ -206,18 +219,16 @@
                     </div>
                     <div class="title">
                       <h3>
-                        Guranteed<br />
-                        Work
+                        {{ "CONSULTING.Guranteed" | translate }} <br />{{
+                          "CONSULTING.Work" | translate
+                        }}
                       </h3>
                     </div>
                   </div>
                   <div class="overlay-text">
                     <div class="box">
                       <div class="inner-text">
-                        <p>
-                          Have to accepted That is wise man of therefore always
-                          we indignation.
-                        </p>
+                        <p>{{ "CONSULTING.P3" | translate }}</p>
                       </div>
                     </div>
                   </div>
@@ -235,18 +246,16 @@
                     </div>
                     <div class="title">
                       <h3>
-                        Free<br />
-                        Consultation
+                        {{ "CONSULTING.Free" | translate }} <br />{{
+                          "CONSULTING.Consultation" | translate
+                        }}
                       </h3>
                     </div>
                   </div>
                   <div class="overlay-text">
                     <div class="box">
                       <div class="inner-text">
-                        <p>
-                          Have to accepted That is wise man of therefore always
-                          we indignation.
-                        </p>
+                        <p>{{ "CONSULTING.P3" | translate }}</p>
                       </div>
                     </div>
                   </div>
@@ -264,18 +273,16 @@
                     </div>
                     <div class="title">
                       <h3>
-                        Reasonable<br />
-                        Price
+                        {{ "CONSULTING.Reasonable" | translate }} <br />{{
+                          "CONSULTING.Price" | translate
+                        }}
                       </h3>
                     </div>
                   </div>
                   <div class="overlay-text">
                     <div class="box">
                       <div class="inner-text">
-                        <p>
-                          Have to accepted That is wise man of therefore always
-                          we indignation.
-                        </p>
+                        <p>{{ "CONSULTING.P3" | translate }}</p>
                       </div>
                     </div>
                   </div>
@@ -298,19 +305,16 @@
             </div>
             <div class="col-xl-6">
               <div class="how-works-content">
-                <h2>How We Work</h2>
+                <h2>{{ "CONSULTING.How We Work" | translate }}</h2>
                 <ul>
                   <li>
                     <div class="icon">
                       <span class="icon-tick"></span>
                     </div>
                     <div class="text">
-                      <span>Stage 1</span>
-                      <h3>Brief & Concept</h3>
-                      <p>
-                        Production technque irrigation managment recommended
-                        nitrogen inputs.
-                      </p>
+                      <span>{{ "CONSULTING.Stage" | translate }} 1</span>
+                      <h3>{{ "CONSULTING.Brief & Concept" | translate }}</h3>
+                      <p>{{ "CONSULTING.P4" | translate }}</p>
                     </div>
                   </li>
                   <li>
@@ -318,12 +322,9 @@
                       <span class="icon-tick"></span>
                     </div>
                     <div class="text">
-                      <span>Stage 2</span>
-                      <h3>Detailed Design</h3>
-                      <p>
-                        Improving agricultural productivity in terms of quantity
-                        and quality.
-                      </p>
+                      <span>{{ "CONSULTING.Stage" | translate }} 2</span>
+                      <h3>{{ "CONSULTING.Detailed Design" | translate }}</h3>
+                      <p>{{ "CONSULTING.P5" | translate }}</p>
                     </div>
                   </li>
                   <li>
@@ -331,12 +332,9 @@
                       <span class="icon-tick"></span>
                     </div>
                     <div class="text">
-                      <span>Stage 3</span>
-                      <h3>Installation</h3>
-                      <p>
-                        Minimizing the effects pests weeds, insects, pathogens,
-                        nematodes on animal
-                      </p>
+                      <span>{{ "CONSULTING.Stage" | translate }} 3</span>
+                      <h3>{{ "CONSULTING.Installation" | translate }}</h3>
+                      <p>{{ "CONSULTING.P6" | translate }}</p>
                     </div>
                   </li>
                 </ul>
@@ -347,7 +345,7 @@
 
         <div class="concept-design-pricing-box">
           <div class="title">
-            <h2>Concept Design Pricing</h2>
+            <h2>{{ "CONSULTING.Concept Design Pricing" | translate }}</h2>
           </div>
           <div class="inner-content">
             <div class="row">
@@ -368,32 +366,42 @@
                     <div class="static-content text-center">
                       <div class="table-header">
                         <div class="top">
-                          <h3>Basic Pack</h3>
+                          <h3>{{ "CONSULTING.Basic Pack" | translate }}</h3>
                           <span
-                            ><b>*</b>Specially planned for small business</span
+                            ><b>*</b
+                            >{{
+                              "CONSULTING.Specially planned for small business"
+                                | translate
+                            }}</span
                           >
                         </div>
                         <div class="package">
                           <h1><span>$</span>19.99</h1>
-                          <p>Renovation</p>
+                          <p>{{ "CONSULTING.Renovation" | translate }}</p>
                         </div>
                       </div>
                       <div class="button">
-                        <a class="btn-one" [routerLink]="['/condesigns']"
-                          >View Services<span class="flaticon-next"></span
+                        <a class="btn-one" [routerLink]="['/prodesigns']"
+                          >{{ "CONSULTING.View Services" | translate
+                          }}<span class="flaticon-next"></span
                         ></a>
                       </div>
                     </div>
                     <div class="overlay-content">
                       <ul>
-                        <li>Consultation</li>
-                        <li>Drawing</li>
-                        <li>Estimate Review</li>
-                        <li>Built Measurements</li>
-                        <li>Original source Files</li>
+                        <li>{{ "CONSULTING.Consultation" | translate }}</li>
+                        <li>{{ "CONSULTING.Drawing" | translate }}</li>
+                        <li>{{ "CONSULTING.Estimate Review" | translate }}</li>
+                        <li>
+                          {{ "CONSULTING.Built Measurements" | translate }}
+                        </li>
+                        <li>
+                          {{ "CONSULTING.Original source Files" | translate }}
+                        </li>
                       </ul>
                       <a class="btn-two" [routerLink]="['/BGV']"
-                        >Get Your Pack<span class="flaticon-next"></span
+                        >{{ "CONSULTING.Get Your Pack" | translate
+                        }}<span class="flaticon-next"></span
                       ></a>
                     </div>
                   </div>
@@ -417,32 +425,42 @@
                     <div class="static-content text-center">
                       <div class="table-header">
                         <div class="top">
-                          <h3>Featured Pack</h3>
+                          <h3>{{ "CONSULTING.Featured Pack" | translate }}</h3>
                           <span
-                            ><b>*</b>Specially planned for small business</span
+                            ><b>*</b
+                            >{{
+                              "CONSULTING.Specially planned for small business"
+                                | translate
+                            }}</span
                           >
                         </div>
                         <div class="package">
                           <h1><span>$</span>99.99</h1>
-                          <p>New Build</p>
+                          <p>{{ "CONSULTING.New Build" | translate }}</p>
                         </div>
                       </div>
                       <div class="button">
                         <a class="btn-one" [routerLink]="['/serveces']"
-                          >View Services<span class="flaticon-next"></span
+                          >{{ "CONSULTING.View Services" | translate
+                          }}<span class="flaticon-next"></span
                         ></a>
                       </div>
                     </div>
                     <div class="overlay-content">
                       <ul>
-                        <li>Consultation</li>
-                        <li>Drawing</li>
-                        <li>Estimate Review</li>
-                        <li>Built Measurements</li>
-                        <li>Original source Files</li>
+                        <li>{{ "CONSULTING.Consultation" | translate }}</li>
+                        <li>{{ "CONSULTING.Drawing" | translate }}</li>
+                        <li>{{ "CONSULTING.Estimate Review" | translate }}</li>
+                        <li>
+                          {{ "CONSULTING.Built Measurements" | translate }}
+                        </li>
+                        <li>
+                          {{ "CONSULTING.Original source Files" | translate }}
+                        </li>
                       </ul>
                       <a class="btn-two" [routerLink]="['/BGV']"
-                        >Get Your Pack<span class="flaticon-next"></span
+                        >{{ "CONSULTING.Get Your Pack" | translate
+                        }}<span class="flaticon-next"></span
                       ></a>
                     </div>
                   </div>
@@ -455,7 +473,7 @@
 
         <div class="additional-information-box">
           <div class="title">
-            <h2>Additional Information</h2>
+            <h2>{{ "CONSULTING.Additional Information" | translate }}</h2>
           </div>
           <div class="inner-content">
             <div class="row">
@@ -465,28 +483,30 @@
                     <!--Start single accordion box-->
                     <div class="accordion accordion-block">
                       <div class="accord-btn">
-                        <h4>When do I need an Interior Designer?</h4>
+                        <h4>
+                          {{
+                            "CONSULTING.When do I need an Interior Designer?"
+                              | translate
+                          }}
+                        </h4>
                       </div>
                       <div class="accord-content">
-                        <p>
-                          We denounce with righteous indignation and dislike men
-                          who are so beguiled and demoralized by the charms of
-                          pleasure of the moment, so blinded by desire.
-                        </p>
+                        <p>{{ "CONSULTING.P7" | translate }}</p>
                       </div>
                     </div>
                     <!--End single accordion box-->
                     <!--Start single accordion box-->
                     <div class="accordion accordion-block">
                       <div class="accord-btn active">
-                        <h4>Why do I need an Interior Designer?</h4>
+                        <h4>
+                          {{
+                            "CONSULTING.Why do I need an Interior Designer?"
+                              | translate
+                          }}
+                        </h4>
                       </div>
                       <div class="accord-content collapsed">
-                        <p>
-                          We denounce with righteous indignation and dislike men
-                          who are so beguiled and demoralized by the charms of
-                          pleasure of the moment, so blinded by desire.
-                        </p>
+                        <p>{{ "CONSULTING.P7" | translate }}</p>
                       </div>
                     </div>
                     <!--End single accordion box-->
@@ -494,16 +514,14 @@
                     <div class="accordion accordion-block">
                       <div class="accord-btn">
                         <h4>
-                          Why do you have a design fee and purchasing fee on the
-                          product?
+                          {{
+                            "CONSULTING.Why do I need an Interior Designer?"
+                              | translate
+                          }}
                         </h4>
                       </div>
                       <div class="accord-content">
-                        <p>
-                          We denounce with righteous indignation and dislike men
-                          who are so beguiled and demoralized by the charms of
-                          pleasure of the moment, so blinded by desire.
-                        </p>
+                        <p>{{ "CONSULTING.P7" | translate }}</p>
                       </div>
                     </div>
                     <!--End single accordion box-->
@@ -511,16 +529,14 @@
                     <div class="accordion accordion-block">
                       <div class="accord-btn">
                         <h4>
-                          What should I have at our first meeting for my
-                          project?
+                          {{
+                            "CONSULTING.What should I have at our first meeting for my project?"
+                              | translate
+                          }}
                         </h4>
                       </div>
                       <div class="accord-content">
-                        <p>
-                          We denounce with righteous indignation and dislike men
-                          who are so beguiled and demoralized by the charms of
-                          pleasure of the moment, so blinded by desire.
-                        </p>
+                        <p>{{ "CONSULTING.P7" | translate }}</p>
                       </div>
                     </div>
                     <!--End single accordion box-->

@@ -21,21 +21,22 @@
             </div>
             <ul>
               <li>
-                <h6>Address</h6>
+                <h6>{{ "FOOTER.Address" | translate }}</h6>
                 <p>
-                  Flat 20, Reynolds Neck, North<br />
-                  Helenaville, FV77 8WS
+                  {{ "FOOTER.P1" | translate }}<br />
+                  {{ "FOOTER.P2" | translate }}
                 </p>
               </li>
               <li>
-                <h6>Phone</h6>
+                <h6>{{ "FOOTER.Phone" | translate }}</h6>
                 <p>
                   +324 123 45 978 & 01<br />
-                  <span>Mon - Friday:</span> 9.00am to 6.00pm
+                  <span>{{ "FOOTER.Mon - Friday:" | translate }}</span> 9.00am
+                  to 6.00pm
                 </p>
               </li>
               <li>
-                <h6>Email</h6>
+                <h6>{{ "FOOTER.Email" | translate }}</h6>
                 <p>
                   abc@yourdomain.com<br />
                   crystalocareer@gmail.com
@@ -50,16 +51,40 @@
       <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
         <div class="single-footer-widget marbtm50">
           <div class="title">
-            <h3>Services</h3>
+            <h3>{{ "FOOTER.Services" | translate }}</h3>
           </div>
           <div class="services-links">
             <ul>
-              <li><a [routerLink]="['/condesigns']">Concept Design</a></li>
-              <li><a [routerLink]="['/prodesigns']">Project Designs</a></li>
-              <li><a [routerLink]="['/makeovers']">Make Overs</a></li>
-              <li><a [routerLink]="['/consulting']">Consulting</a></li>
-              <li><a [routerLink]="['/glasswrought']">Glass & Wrought</a></li>
-              <li><a [routerLink]="['/spaceplanning']">Space Planning</a></li>
+              <li>
+                <a [routerLink]="['/condesigns']">{{
+                  "FOOTER.Concept Design" | translate
+                }}</a>
+              </li>
+              <li>
+                <a [routerLink]="['/prodesigns']">{{
+                  "FOOTER.Project Designs" | translate
+                }}</a>
+              </li>
+              <li>
+                <a [routerLink]="['/makeovers']">{{
+                  "FOOTER.Make Overs" | translate
+                }}</a>
+              </li>
+              <li>
+                <a [routerLink]="['/consulting']">{{
+                  "FOOTER.Consulting" | translate
+                }}</a>
+              </li>
+              <li>
+                <a [routerLink]="['/glasswrought']">{{
+                  "FOOTER.Glass & Wrought" | translate
+                }}</a>
+              </li>
+              <li>
+                <a [routerLink]="['/spaceplanning']">{{
+                  "FOOTER.Space Planning" | translate
+                }}</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -69,7 +94,7 @@
       <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
         <div class="single-footer-widget pdbtm50">
           <div class="title">
-            <h3>Recent News</h3>
+            <h3>{{ "FOOTER.Recent News" | translate }}</h3>
           </div>
           <ul class="recent-news">
             <li>
@@ -91,9 +116,9 @@
               <div class="title-holder">
                 <p>March 10, 2019</p>
                 <h5>
-                  <a href="#"
-                    >Creating drama and<br />
-                    feeling with...</a
+                  <a [routerLink]="['/soon']"
+                    >{{ "FOOTER.Creating drama and" | translate }}<br />
+                    {{ "FOOTER.feeling with..." | translate }}</a
                   >
                 </h5>
               </div>
@@ -117,9 +142,9 @@
               <div class="title-holder">
                 <p>March 02, 2019</p>
                 <h5>
-                  <a href="#"
-                    >Wondering if interior<br />
-                    design is dying...</a
+                  <a [routerLink]="['/soon']"
+                    >{{ "FOOTER.Wondering if interior" | translate }}<br />
+                    {{ "FOOTER.design is dying..." | translate }}</a
                   >
                 </h5>
               </div>
@@ -143,9 +168,9 @@
               <div class="title-holder">
                 <p>February 27, 2019</p>
                 <h5>
-                  <a href="#"
-                    >Enjoy monsoon in<br />
-                    comfort of your...</a
+                  <a [routerLink]="['/soon']"
+                    >{{ "FOOTER.Enjoy monsoon in" | translate }}<br />
+                    {{ "FOOTER.comfort of your..." | translate }}</a
                   >
                 </h5>
               </div>
@@ -168,11 +193,12 @@
               </div>
               <div class="title-holder">
                 <h3>
-                  Our Interior Design<br />
-                  Brochure
+                  {{ "FOOTER.Our Interior Design" | translate }}<br />
+                  {{ "FOOTER.Brochure" | translate }}
                 </h3>
                 <a class="btn-two" href="#"
-                  >Download Now<span class="flaticon-next"></span
+                  >{{ "FOOTER.Download Now" | translate
+                  }}<span class="flaticon-next"></span
                 ></a>
               </div>
             </div>
@@ -194,13 +220,13 @@
         <div class="footer-bottom-content flex-box-two">
           <div class="copyright-text">
             <p>
-              <a href="https://www.templateshub.net" target="_blank"
-                >Templates Hub</a
-              >
+              <a href="https://www.templateshub.net" target="_blank">{{
+                "FOOTER.Templates Hub" | translate
+              }}</a>
             </p>
           </div>
           <div class="footer-social-links float-right">
-            <span>We are On:</span>
+            <span>{{ "FOOTER.We are On:" | translate }}</span>
             <ul class="sociallinks-style-one">
               <li
                 class="wow slideInUp"
