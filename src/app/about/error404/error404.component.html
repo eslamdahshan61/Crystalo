@@ -1,22 +1,31 @@
 <!--Start breadcrumb area-->
-<section class="breadcrumb-area style2" style="background-image: url(assets/images/resources/breadcrumb-bg-2.jpg);">
+<section
+  class="breadcrumb-area style2"
+  style="background-image: url(assets/images/resources/breadcrumb-bg-2.jpg);"
+>
   <div class="container">
-      <div class="row">
-          <div class="col-xl-12">
-              <div class="inner-content-box clearfix">
-                  <div class="title-s2 text-center">
-                      <span>Error Page</span>
-                      <h1>Page Not Found</h1>
-                  </div>
-                  <div class="breadcrumb-menu float-left">
-                      <ul class="clearfix">
-                          <li><a [routerLink]="['/home']"></a></li>
-                          <li class="active">Error Page</li>
-                      </ul>
-                  </div>
-              </div>
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="inner-content-box clearfix">
+          <div class="title-s2 text-center">
+            <span>{{ "ERROR.Error Page" | translate }}</span>
+            <h1>{{ "ERROR.Page Not Found" | translate }}</h1>
           </div>
+          <div class="breadcrumb-menu float-left">
+            <ul class="clearfix">
+              <li>
+                <a [routerLink]="['/home']">{{ "ERROR.Home" | translate }}</a>
+              </li>
+              <li class="active">
+                <a [routerLink]="['/404']">{{
+                  "ERROR.Error Page" | translate
+                }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 </section>
 <!--End breadcrumb area-->
@@ -24,18 +33,23 @@
 <!--Start Error Page Area-->
 <section class="error-page-area">
   <div class="container">
-      <div class="row">
-          <div class="col-xl-12">
-              <div class="error-content text-center">
-                  <span>Page Not Found</span>
-                  <div class="title">404</div>
-                  <p>We’re unable to find a page you are looking for, Try later or click the button.</p>
-                  <div class="button">
-                      <a class="btn-one" [routerLink]="['/home']">Back to Home</a>
-                  </div>
-              </div>
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="error-content text-center">
+          <span>{{ "ERROR.Page Not Found" | translate }}</span>
+          <div class="title">404</div>
+          <p>
+            {{ "ERROR.P1" | translate }}
+          </p>
+          <div class="button">
+            <a class="btn-one" [routerLink]="['/home']">{{
+              "ERROR.Back to Home" | translate
+            }}</a>
           </div>
+        </div>
       </div>
+    </div>
   </div>
 </section>
 <!--End Error Page  wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms" Area-->
+<app-footer></app-footer>

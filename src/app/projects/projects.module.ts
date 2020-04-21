@@ -1,3 +1,8 @@
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { HttpClient } from "@angular/common/http";
+import { TranslateLoader } from "@ngx-translate/core";
+import { TranslateModule } from "@ngx-translate/core";
+
 import { Fwidth2Component } from "./fwidth2/fwidth2.component";
 import { Fwidth1Component } from "./fwidth1/fwidth1.component";
 import { Modern2Component } from "./modern2/modern2.component";
@@ -9,6 +14,10 @@ import { ProjectsComponent } from "./projects.component";
 import { RouterModule } from "@angular/router";
 
 import { NgModule } from "@angular/core";
+import { FooterComponent } from "./footer/footer.component";
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   imports: [
@@ -21,6 +30,13 @@ import { NgModule } from "@angular/core";
       { path: "fwidth1", component: Fwidth1Component },
       { path: "fwidth2", component: Fwidth2Component },
     ]),
+    TranslateModule.forChild({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
   declarations: [
     ProjectsComponent,
@@ -30,6 +46,7 @@ import { NgModule } from "@angular/core";
     Modern2Component,
     Fwidth1Component,
     Fwidth2Component,
+    FooterComponent,
   ],
 })
 export class ProjectsModule {}

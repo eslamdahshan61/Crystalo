@@ -1,185 +1,260 @@
-  <!--Start breadcrumb area-->
-  <section class="breadcrumb-area style2" style="background-image: url(assets/images/resources/breadcrumb-bg-2.jpg);">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="inner-content-box clearfix">
-                    <div class="title-s2 text-center">
-                        <span>Our Projects</span>
-                        <h1>More than 2300 Projects</h1>
-                    </div>
-                    <div class="breadcrumb-menu float-left">
-                        <ul class="clearfix">
-                            <li><a [routerLink]="['/home']">Home</a></li>
-                            <li><a [routerLink]="['/classic1']">Projects</a></li>
-                            <li class="active">Fullwidth 01</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<!--Start breadcrumb area-->
+<section
+  class="breadcrumb-area style2"
+  style="background-image: url(assets/images/resources/breadcrumb-bg-2.jpg);"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="inner-content-box clearfix">
+          <div class="title-s2 text-center">
+            <span>{{ "CLASSIC1.Our Projects" | translate }}</span>
+            <h1>{{ "CLASSIC1.More than 2300 Projects" | translate }}</h1>
+          </div>
+          <div class="breadcrumb-menu float-left">
+            <ul class="clearfix">
+              <li>
+                <a [routerLink]="['/home']">{{
+                  "CLASSIC1.Home" | translate
+                }}</a>
+              </li>
+              <li>
+                <a [routerLink]="['/classic1']">{{
+                  "CLASSIC1.Projects" | translate
+                }}</a>
+              </li>
+              <li class="active">{{ "CLASSIC1.Fullwidth 01" | translate }}</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 <!--End breadcrumb area-->
 
 <!--Start Main project area style3-->
 <section class="main-project-area style3">
-    <div class="container">
-        <ul class="project-filter post-filter has-dynamic-filters-counter">
-            <li data-filter=".filter-item" class="active"><span class="filter-text">All Projects</span></li>
-            <li data-filter=".mod"><span class="filter-text">Modern</span></li>
-            <li data-filter=".contem"><span class="filter-text">Contemporary</span></li>
-            <li data-filter=".trad"><span class="filter-text">Traditional</span></li>
-            <li data-filter=".ret"><span class="filter-text">Retreat</span></li>
-        </ul>
-    </div>
-    <div class="container-fluid main-project-style3">
-        <div class="row mar0 filter-layout masonary-layout">
-            <!--Start single project item-->
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item contem ret">
-                <div class="single-project-style6">
-                    <div class="img-holder">
-                        <img src="assets/images/projects/v3-1.jpg" alt="Awesome Image">
-                        <div class="overlay-content">
-                            <div class="inner-content">
-                                <div class="title-box">
-                                    <span>Contemporary</span>
-                                    <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <div class="container">
+    <ul class="project-filter post-filter has-dynamic-filters-counter">
+      <li data-filter=".filter-item" class="active">
+        <span class="filter-text">{{
+          "CLASSIC1.All Projects" | translate
+        }}</span>
+      </li>
+      <li data-filter=".mod">
+        <span class="filter-text">{{ "CLASSIC1.Modern" | translate }}</span>
+      </li>
+      <li data-filter=".contem">
+        <span class="filter-text">{{
+          "CLASSIC1.Contemporary" | translate
+        }}</span>
+      </li>
+      <li data-filter=".trad">
+        <span class="filter-text">{{
+          "CLASSIC1.Traditional" | translate
+        }}</span>
+      </li>
+      <li data-filter=".ret">
+        <span class="filter-text">{{ "CLASSIC1.Retreat" | translate }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="container-fluid main-project-style3">
+    <div class="row mar0 filter-layout masonary-layout">
+      <!--Start single project item-->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item contem ret"
+      >
+        <div class="single-project-style6">
+          <div class="img-holder">
+            <img src="assets/images/projects/v3-1.jpg" alt="Awesome Image" />
+            <div class="overlay-content">
+              <div class="inner-content">
+                <div class="title-box">
+                  <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+                  <h3>
+                    <a [routerLink]="['/singleblog']">{{
+                      "CLASSIC1.Nathan Brooke House" | translate
+                    }}</a>
+                  </h3>
                 </div>
+              </div>
             </div>
-            <!--End single project item-->
-            <!--Start single project item-->
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod trad">
-                <div class="single-project-style6">
-                    <div class="img-holder">
-                        <img src="assets/images/projects/v3-2.jpg" alt="Awesome Image">
-                        <div class="overlay-content">
-                            <div class="inner-content">
-                                <div class="title-box">
-                                    <span>Contemporary</span>
-                                    <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </div>
+      <!--End single project item-->
+      <!--Start single project item-->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod trad"
+      >
+        <div class="single-project-style6">
+          <div class="img-holder">
+            <img src="assets/images/projects/v3-2.jpg" alt="Awesome Image" />
+            <div class="overlay-content">
+              <div class="inner-content">
+                <div class="title-box">
+                  <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+                  <h3>
+                    <a [routerLink]="['/singleblog']">{{
+                      "CLASSIC1.Nathan Brooke House" | translate
+                    }}</a>
+                  </h3>
                 </div>
+              </div>
             </div>
-            <!--End single project item-->
-            <!--Start single project item-->
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod ret">
-                <div class="single-project-style6">
-                    <div class="img-holder">
-                        <img src="assets/images/projects/v3-3.jpg" alt="Awesome Image">
-                        <div class="overlay-content">
-                            <div class="inner-content">
-                                <div class="title-box">
-                                    <span>Contemporary</span>
-                                    <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </div>
+      <!--End single project item-->
+      <!--Start single project item-->
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod ret">
+        <div class="single-project-style6">
+          <div class="img-holder">
+            <img src="assets/images/projects/v3-3.jpg" alt="Awesome Image" />
+            <div class="overlay-content">
+              <div class="inner-content">
+                <div class="title-box">
+                  <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+                  <h3>
+                    <a [routerLink]="['/singleblog']">{{
+                      "CLASSIC1.Nathan Brooke House" | translate
+                    }}</a>
+                  </h3>
                 </div>
+              </div>
             </div>
-            <!--End single project item-->
-            <!--Start single project item-->
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod trad">
-                <div class="single-project-style6">
-                    <div class="img-holder">
-                        <img src="assets/images/projects/v3-4.jpg" alt="Awesome Image">
-                        <div class="overlay-content">
-                            <div class="inner-content">
-                                <div class="title-box">
-                                    <span>Contemporary</span>
-                                    <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </div>
+      <!--End single project item-->
+      <!--Start single project item-->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod trad"
+      >
+        <div class="single-project-style6">
+          <div class="img-holder">
+            <img src="assets/images/projects/v3-4.jpg" alt="Awesome Image" />
+            <div class="overlay-content">
+              <div class="inner-content">
+                <div class="title-box">
+                  <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+                  <h3>
+                    <a [routerLink]="['/singleblog']">{{
+                      "CLASSIC1.Nathan Brooke House" | translate
+                    }}</a>
+                  </h3>
                 </div>
+              </div>
             </div>
-            <!--End single project item-->
+          </div>
+        </div>
+      </div>
+      <!--End single project item-->
 
-            <!--Start single project item-->
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item contem ret">
-                <div class="single-project-style6">
-                    <div class="img-holder">
-                        <img src="assets/images/projects/v3-5.jpg" alt="Awesome Image">
-                        <div class="overlay-content">
-                            <div class="inner-content">
-                                <div class="title-box">
-                                    <span>Contemporary</span>
-                                    <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <!--Start single project item-->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item contem ret"
+      >
+        <div class="single-project-style6">
+          <div class="img-holder">
+            <img src="assets/images/projects/v3-5.jpg" alt="Awesome Image" />
+            <div class="overlay-content">
+              <div class="inner-content">
+                <div class="title-box">
+                  <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+                  <h3>
+                    <a [routerLink]="['/singleblog']">{{
+                      "CLASSIC1.Nathan Brooke House" | translate
+                    }}</a>
+                  </h3>
                 </div>
+              </div>
             </div>
-            <!--End single project item-->
-            <!--Start single project item-->
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod trad">
-                <div class="single-project-style6">
-                    <div class="img-holder">
-                        <img src="assets/images/projects/v3-6.jpg" alt="Awesome Image">
-                        <div class="overlay-content">
-                            <div class="inner-content">
-                                <div class="title-box">
-                                    <span>Contemporary</span>
-                                    <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End single project item-->
-            <!--Start single project item-->
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod ret">
-                <div class="single-project-style6">
-                    <div class="img-holder">
-                        <img src="assets/images/projects/v3-7.jpg" alt="Awesome Image">
-                        <div class="overlay-content">
-                            <div class="inner-content">
-                                <div class="title-box">
-                                    <span>Contemporary</span>
-                                    <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End single project item-->
-            <!--Start single project item-->
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod trad">
-                <div class="single-project-style6">
-                    <div class="img-holder">
-                        <img src="assets/images/projects/v3-8.jpg" alt="Awesome Image">
-                        <div class="overlay-content">
-                            <div class="inner-content">
-                                <div class="title-box">
-                                    <span>Contemporary</span>
-                                    <h3><a [routerLink]="['/singleblog']">Nathan Brooke House</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End single project item-->
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="load-more-project-style3-button text-center">
-                    <a class="btn-one" [routerLink]="['/classic1']">Load More<span class="flaticon-next"></span></a>
+      </div>
+      <!--End single project item-->
+      <!--Start single project item-->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod trad"
+      >
+        <div class="single-project-style6">
+          <div class="img-holder">
+            <img src="assets/images/projects/v3-6.jpg" alt="Awesome Image" />
+            <div class="overlay-content">
+              <div class="inner-content">
+                <div class="title-box">
+                  <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+                  <h3>
+                    <a [routerLink]="['/singleblog']">{{
+                      "CLASSIC1.Nathan Brooke House" | translate
+                    }}</a>
+                  </h3>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <!--End single project item-->
+      <!--Start single project item-->
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod ret">
+        <div class="single-project-style6">
+          <div class="img-holder">
+            <img src="assets/images/projects/v3-7.jpg" alt="Awesome Image" />
+            <div class="overlay-content">
+              <div class="inner-content">
+                <div class="title-box">
+                  <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+                  <h3>
+                    <a [routerLink]="['/singleblog']">{{
+                      "CLASSIC1.Nathan Brooke House" | translate
+                    }}</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End single project item-->
+      <!--Start single project item-->
+      <div
+        class="col-xl-3 col-lg-3 col-md-6 col-sm-12 pd0 filter-item mod trad"
+      >
+        <div class="single-project-style6">
+          <div class="img-holder">
+            <img src="assets/images/projects/v3-8.jpg" alt="Awesome Image" />
+            <div class="overlay-content">
+              <div class="inner-content">
+                <div class="title-box">
+                  <span>{{ "CLASSIC1.Contemporary" | translate }}</span>
+                  <h3>
+                    <a [routerLink]="['/singleblog']">{{
+                      "CLASSIC1.Nathan Brooke House" | translate
+                    }}</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End single project item-->
     </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="load-more-project-style3-button text-center">
+          <a class="btn-one" [routerLink]="['/classic1']"
+            >{{ "CLASSIC1.Load More" | translate
+            }}<span class="flaticon-next"></span
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!--End Main project area style3-->
+<app-footer></app-footer>

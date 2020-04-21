@@ -27,18 +27,194 @@
 
 "use strict";
 
+/**************************** start add language *************/
+
 //====Main menu===
 function mainmenu() {
   //Submenu Dropdown Toggle
   if ($(".main-menu li.dropdown ul").length) {
-    $(".main-menu li.dropdown").append('<div class="dropdown-btn"></div>');
+    /* $(".main-menu li.dropdown").append('<div class="dropdown-btn"></div>'); */
+
+    /* close all and toggle only the selected*/
+    $("#00").on("click", function () {
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+      toggle();
+    });
+
+    $("#home").on("click", function () {
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+      $("#coll").removeClass("show");
+      $("#toggle").removeClass().addClass("navbar-toggle");
+      $("#toggle").attr("aria-expanded", "false");
+    });
+    $("#about-us").on("click", function () {
+      $("#about-us-ul").slideToggle(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+    });
+    /* $("#2100").on("click", function () {
+      $("#language-ul").slideToggle(800);
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+    }); */
+    $("#language-btn").on("click", function () {
+      $("#language-ul").slideToggle(800);
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+    });
+    //close nav for phones
+    function toggle() {
+      $("#coll").removeClass("show");
+      $("#toggle").removeClass().addClass("navbar-toggle");
+      $("#toggle").attr("aria-expanded", "false");
+    }
+    $("#about-company").on("click", toggle);
+    $("#faq").on("click", toggle);
+    $("#soon").on("click", toggle);
+    $("#error-page").on("click", toggle);
+    $("#all-services").on("click", toggle);
+    $("#cons-design").on("click", toggle);
+    $("#proj-design").on("click", toggle);
+    $("#make-overs").on("click", toggle);
+    $("#consulting").on("click", toggle);
+    $("#glas-wrought").on("click", toggle);
+    $("#space-planning").on("click", toggle);
+    $("#classic1").on("click", toggle);
+    $("#classic2").on("click", toggle);
+    $("#modern1").on("click", toggle);
+    $("#modern2").on("click", toggle);
+
+    $("#fwidth1").on("click", toggle);
+    $("#singleproject").on("click", toggle);
+    $("#BGV").on("click", toggle);
+    $("#BWS").on("click", toggle);
+    $("#singleblog").on("click", toggle);
+    $("#ourproducts").on("click", toggle);
+    $("#singleproducts").on("click", toggle);
+    $("#shoppingcard").on("click", toggle);
+    $("#checkout").on("click", toggle);
+    $("#english").on("click", toggle);
+    $("#arabic").on("click", toggle);
+    $("#contact").on("click", toggle);
+    /*  $("#2300").on("click", toggle);
+    $("#2400").on("click", toggle); */
+    //close nav for phones
+
+    $("#about-us-btn").on("click", function () {
+      $("#about-us-ul").slideToggle(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+    });
+
+    $("#services-btn").on("click", function () {
+      $("#services-ul").slideToggle();
+      $("#about-us-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+    });
+    $("#services").on("click", function () {
+      $("#services-ul").slideToggle();
+      $("#about-us-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+    });
+    $("#projects").on("click", function () {
+      $("#projects-ul").slideToggle();
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+    });
+
+    $("#projects-btn").on("click", function () {
+      $("#projects-ul").slideToggle();
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+    });
+    $("#blog").on("click", function () {
+      $("#blog-ul").slideToggle();
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+    });
+
+    $("#blog-btn").on("click", function () {
+      $("#blog-ul").slideToggle();
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+    });
+    $("#shop").on("click", function () {
+      $("#shop-ul").slideToggle();
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+    });
+
+    $("#shop-btn").on("click", function () {
+      $("#shop-ul").slideToggle();
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#language-ul").slideUp(800);
+    });
+    $("#language").on("click", function () {
+      $("#language-ul").slideToggle();
+      $("#about-us-ul").slideUp(800);
+      $("#services-ul").slideUp(800);
+      $("#projects-ul").slideUp(800);
+      $("#blog-ul").slideUp(800);
+      $("#shop-ul").slideUp(800);
+    });
 
     //Dropdown Button
-    $(".main-menu li.dropdown .dropdown-btn").on("click", function () {
+    /* $(".main-menu li.dropdown .dropdown-btn").on("click", function () {
       $(this).prev("ul").slideToggle(500);
-    });
+    }); */
   }
 }
+
+/* $("#blog1").click(function () {
+  $("#toggle-btn").attr("data-toggle", "collapse");
+  $("#toggle-btn").attr("data-target", ".navbar-collapse");
+}); */
 
 //===Language switcher===
 function languageSwitcher() {
@@ -127,7 +303,7 @@ function CounterNumberChanger() {
   var timer = $(".timer");
   if (timer.length) {
     timer.appear(function () {
-      timer.countTo();
+      timer.countTo(50);
     });
   }
 }

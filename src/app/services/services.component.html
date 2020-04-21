@@ -8,13 +8,17 @@
       <div class="col-xl-12">
         <div class="inner-content-box clearfix">
           <div class="title-s2 text-center">
-            <span>Our Services</span>
-            <h1>Bringing Great Design</h1>
+            <span>{{ "SERVICES.Our Services" | translate }}</span>
+            <h1>{{ "SERVICES.Bringing Great Design" | translate }}</h1>
           </div>
           <div class="breadcrumb-menu float-left">
             <ul class="clearfix">
-              <li><a [routerLink]="['/home']">Home</a></li>
-              <li class="active">Services</li>
+              <li>
+                <a [routerLink]="['/home']">{{
+                  "SERVICES.Home" | translate
+                }}</a>
+              </li>
+              <li class="active">{{ "SERVICES.Services" | translate }}</li>
             </ul>
           </div>
         </div>
@@ -30,15 +34,17 @@
     <div class="row">
       <div class="col-xl-5">
         <div class="sec-title">
-          <p>Categories</p>
-          <div class="title">Working <span>Sectors</span></div>
+          <p>{{ "SERVICES.Categories" | translate }}</p>
+          <div class="title">
+            {{ "SERVICES.Working" | translate }}
+            <span>{{ "SERVICES.Sectors" | translate }}</span>
+          </div>
         </div>
       </div>
       <div class="col-xl-7">
         <div class="text">
           <p>
-            We are an Interior Designer, Who believe in excellence, quality and
-            honesty, yes we design beautiful home interiors.
+            {{ "SERVICES.P1" | translate }}
           </p>
         </div>
       </div>
@@ -60,16 +66,16 @@
               <span class="icon-concept"></span>
             </div>
             <div class="inner">
-              <h3>Concept Designs</h3>
+              <h3>{{ "SERVICES.Concept Designs" | translate }}</h3>
               <div class="text">
                 <p>
-                  Indignation dislike are beguile works & demoralized the charms
-                  except to obtain some advantage from it.
+                  {{ "SERVICES.P2" | translate }}
                 </p>
               </div>
               <div class="read-more">
                 <a class="btn-one" [routerLink]="['/BGV']"
-                  >Read More<span class="flaticon-next"></span
+                  >{{ "SERVICES.Read More" | translate
+                  }}<span class="flaticon-next"></span
                 ></a>
               </div>
             </div>
@@ -93,16 +99,18 @@
               <span class="icon-scheme"></span>
             </div>
             <div class="inner">
-              <h3>Project Designs</h3>
+              <h3>
+                {{ "SERVICES.Project Designs" | translate }}
+              </h3>
               <div class="text">
                 <p>
-                  Our power of choice untrammelled all nothing prevents best
-                  choice untrammeled when nothing prevents .
+                  {{ "SERVICES.P3" | translate }}
                 </p>
               </div>
               <div class="read-more">
                 <a class="btn-one" [routerLink]="['/BGV']"
-                  >Read More<span class="flaticon-next"></span
+                  >{{ "SERVICES.Read More" | translate
+                  }}<span class="flaticon-next"></span
                 ></a>
               </div>
             </div>
@@ -126,16 +134,16 @@
               <span class="icon-cupboard"></span>
             </div>
             <div class="inner">
-              <h3>Make Overs</h3>
+              <h3>{{ "SERVICES.Make Overs" | translate }}</h3>
               <div class="text">
                 <p>
-                  Every pleasure to be welcomed every circumstances and owing
-                  power occur that repudiated & annoyances .
+                  {{ "SERVICES.P4" | translate }}
                 </p>
               </div>
               <div class="read-more">
                 <a class="btn-one" [routerLink]="['/BGV']"
-                  >Read More<span class="flaticon-next"></span
+                  >{{ "SERVICES.Read More" | translate
+                  }}<span class="flaticon-next"></span
                 ></a>
               </div>
             </div>
@@ -160,16 +168,16 @@
               <span class="icon-teacher"></span>
             </div>
             <div class="inner">
-              <h3>Consulting</h3>
+              <h3>{{ "SERVICES.Consulting" | translate }}</h3>
               <div class="text">
                 <p>
-                  Every pleasure to be welcomed every circumstances and owing
-                  power occur that repudiated & annoyances .
+                  {{ "SERVICES.P4" | translate }}
                 </p>
               </div>
               <div class="read-more">
                 <a class="btn-one" [routerLink]="['/BGV']"
-                  >Read More<span class="flaticon-next"></span
+                  >{{ "SERVICES.Read More" | translate
+                  }}<span class="flaticon-next"></span
                 ></a>
               </div>
             </div>
@@ -193,16 +201,16 @@
               <span class="icon-furniture-and-household"></span>
             </div>
             <div class="inner">
-              <h3>Glass & Wrought</h3>
+              <h3>{{ "SERVICES.Glass & Wrought" | translate }}</h3>
               <div class="text">
                 <p>
-                  Indignation dislike are beguile works & demoralized the charms
-                  except to obtain some advantage from it.
+                  {{ "SERVICES.P2" | translate }}
                 </p>
               </div>
               <div class="read-more">
                 <a class="btn-one" [routerLink]="['/BGV']"
-                  >Read More<span class="flaticon-next"></span
+                  >{{ "SERVICES.Read More" | translate
+                  }}<span class="flaticon-next"></span
                 ></a>
               </div>
             </div>
@@ -226,16 +234,16 @@
               <span class="icon-sketch"></span>
             </div>
             <div class="inner">
-              <h3>Space Planning</h3>
+              <h3>{{ "SERVICES.Space Planning" | translate }}</h3>
               <div class="text">
                 <p>
-                  Our power of choice untrammelled all nothing prevents best
-                  choice untrammeled when nothing prevents.
+                  {{ "SERVICES.P3" | translate }}
                 </p>
               </div>
               <div class="read-more">
                 <a class="btn-one" [routerLink]="['/BGV']"
-                  >Read More<span class="flaticon-next"></span
+                  >{{ "SERVICES.Read More" | translate
+                  }}<span class="flaticon-next"></span
                 ></a>
               </div>
             </div>
@@ -256,8 +264,11 @@
       data-wow-delay="100ms"
       data-wow-duration="1200ms"
     >
-      <p>Interior Elements</p>
-      <div class="title">Some Special <span>Services</span></div>
+      <p>{{ "SERVICES.Interior Elements" | translate }}</p>
+      <div class="title">
+        {{ "SERVICES.Some Special" | translate }}
+        <span>{{ "SERVICES.Services" | translate }}</span>
+      </div>
     </div>
     <div class="row">
       <!--Start single service style1-->
@@ -283,22 +294,25 @@
               </div>
               <div class="bottom">
                 <div class="title">
-                  <h3>Lighting</h3>
+                  <h3>{{ "SERVICES.Lighting" | translate }}</h3>
                 </div>
                 <div class="read-more">
-                  <a href="#"><span class="icon-next"></span></a>
+                  <a [routerLink]="['/singleproject']"
+                    ><span class="icon-next"></span
+                  ></a>
                 </div>
               </div>
             </div>
             <div class="overlay-content">
               <div class="text">
                 <p>
-                  On that others hand, we will denounce with all righteous of
-                  demoralized charms.
+                  {{ "SERVICES.P6" | translate }}
                 </p>
               </div>
               <div class="read-more">
-                <a href="#"><span class="icon-next"></span></a>
+                <a [routerLink]="['/singleproject']"
+                  ><span class="icon-next"></span
+                ></a>
               </div>
             </div>
           </div>
@@ -328,22 +342,25 @@
               </div>
               <div class="bottom">
                 <div class="title">
-                  <h3>Coloring</h3>
+                  <h3>{{ "SERVICES.Coloring" | translate }}</h3>
                 </div>
                 <div class="read-more">
-                  <a href="#"><span class="icon-next"></span></a>
+                  <a [routerLink]="['/singleproject']"
+                    ><span class="icon-next"></span
+                  ></a>
                 </div>
               </div>
             </div>
             <div class="overlay-content">
               <div class="text">
                 <p>
-                  On that others hand, we will denounce with all righteous of
-                  demoralized charms.
+                  {{ "SERVICES.P6" | translate }}
                 </p>
               </div>
               <div class="read-more">
-                <a href="#"><span class="icon-next"></span></a>
+                <a [routerLink]="['/singleproject']"
+                  ><span class="icon-next"></span
+                ></a>
               </div>
             </div>
           </div>
@@ -373,22 +390,25 @@
               </div>
               <div class="bottom">
                 <div class="title">
-                  <h3>Patterns</h3>
+                  <h3>{{ "SERVICES.Patterns" | translate }}</h3>
                 </div>
                 <div class="read-more">
-                  <a href="#"><span class="icon-next"></span></a>
+                  <a [routerLink]="['/singleproject']"
+                    ><span class="icon-next"></span
+                  ></a>
                 </div>
               </div>
             </div>
             <div class="overlay-content">
               <div class="text">
                 <p>
-                  On that others hand, we will denounce with all righteous of
-                  demoralized charms.
+                  {{ "SERVICES.P6" | translate }}
                 </p>
               </div>
               <div class="read-more">
-                <a href="#"><span class="icon-next"></span></a>
+                <a [routerLink]="['/singleproject']"
+                  ><span class="icon-next"></span
+                ></a>
               </div>
             </div>
           </div>
@@ -418,22 +438,25 @@
               </div>
               <div class="bottom">
                 <div class="title">
-                  <h3>Textures</h3>
+                  <h3>{{ "SERVICES.Textures" | translate }}</h3>
                 </div>
                 <div class="read-more">
-                  <a href="#"><span class="icon-next"></span></a>
+                  <a [routerLink]="['/singleproject']"
+                    ><span class="icon-next"></span
+                  ></a>
                 </div>
               </div>
             </div>
             <div class="overlay-content">
               <div class="text">
                 <p>
-                  On that others hand, we will denounce with all righteous of
-                  demoralized charms.
+                  {{ "SERVICES.P6" | translate }}
                 </p>
               </div>
               <div class="read-more">
-                <a href="#"><span class="icon-next"></span></a>
+                <a [routerLink]="['/singleproject']"
+                  ><span class="icon-next"></span
+                ></a>
               </div>
             </div>
           </div>
@@ -449,8 +472,11 @@
 <section class="testimonial-style3-service-page">
   <div class="container">
     <div class="sec-title">
-      <p>testimonials</p>
-      <div class="title">Our Customer <span>Words</span></div>
+      <p>{{ "SERVICES.testimonials" | translate }}</p>
+      <div class="title">
+        {{ "SERVICES.Our Customer" | translate }}
+        <span>{{ "SERVICES.Words" | translate }}</span>
+      </div>
     </div>
     <div class="row">
       <div class="col-xl-12 col-lg-12">
@@ -466,16 +492,12 @@
                   />
                 </div>
                 <div class="title">
-                  <h3>Z. Gartrell Wright</h3>
-                  <span>Los Angeles</span>
+                  <h3>{{ "SERVICES.Z. Gartrell Wright" | translate }}</h3>
+                  <span>{{ "SERVICES.Los Angeles" | translate }}</span>
                 </div>
               </div>
               <div class="text-box">
-                <p>
-                  "crystalo have done an excellent job presenting the analysis &
-                  insights. I am confident in saying have helped encounter is to
-                  be welcomed and every pain avoided”.
-                </p>
+                <p>"{{ "SERVICES.P7" | translate }}”.</p>
               </div>
               <div class="review-box">
                 <ul>
@@ -500,16 +522,12 @@
                   />
                 </div>
                 <div class="title">
-                  <h3>H.Sam Danisley</h3>
-                  <span>Newyork City</span>
+                  <h3>{{ "SERVICES.H.Sam Danisley" | translate }}</h3>
+                  <span>{{ "SERVICES.Newyork City" | translate }}</span>
                 </div>
               </div>
               <div class="text-box">
-                <p>
-                  “Owing to the claims of duty or the obligations of business it
-                  will frequently occur that pleasures have to be repudiated and
-                  annoyances accepted always holds”.
-                </p>
+                <p>“{{ "SERVICES.P8" | translate }}”.</p>
               </div>
               <div class="review-box">
                 <ul>
@@ -535,16 +553,12 @@
                   />
                 </div>
                 <div class="title">
-                  <h3>Z. Gartrell Wright</h3>
-                  <span>Los Angeles</span>
+                  <h3>{{ "SERVICES.Z. Gartrell Wright" | translate }}</h3>
+                  <span>{{ "SERVICES.Los Angeles" | translate }}</span>
                 </div>
               </div>
               <div class="text-box">
-                <p>
-                  "crystalo have done an excellent job presenting the analysis &
-                  insights. I am confident in saying have helped encounter is to
-                  be welcomed and every pain avoided”.
-                </p>
+                <p>"{{ "SERVICES.P7" | translate }}”.</p>
               </div>
               <div class="review-box">
                 <ul>
@@ -569,16 +583,12 @@
                   />
                 </div>
                 <div class="title">
-                  <h3>H.Sam Danisley</h3>
-                  <span>Newyork City</span>
+                  <h3>{{ "SERVICES.H.Sam Danisley" | translate }}</h3>
+                  <span>{{ "SERVICES.Newyork City" | translate }}</span>
                 </div>
               </div>
               <div class="text-box">
-                <p>
-                  “Owing to the claims of duty or the obligations of business it
-                  will frequently occur that pleasures have to be repudiated and
-                  annoyances accepted always holds”.
-                </p>
+                <p>“{{ "SERVICES.P8" | translate }}”.</p>
               </div>
               <div class="review-box">
                 <ul>
@@ -604,16 +614,12 @@
                   />
                 </div>
                 <div class="title">
-                  <h3>Z. Gartrell Wright</h3>
-                  <span>Los Angeles</span>
+                  <h3>{{ "SERVICES.Z. Gartrell Wright" | translate }}</h3>
+                  <span>{{ "SERVICES.Los Angeles" | translate }}</span>
                 </div>
               </div>
               <div class="text-box">
-                <p>
-                  "crystalo have done an excellent job presenting the analysis &
-                  insights. I am confident in saying have helped encounter is to
-                  be welcomed and every pain avoided”.
-                </p>
+                <p>"{{ "SERVICES.P7" | translate }}”.</p>
               </div>
               <div class="review-box">
                 <ul>
@@ -638,16 +644,12 @@
                   />
                 </div>
                 <div class="title">
-                  <h3>H.Sam Danisley</h3>
-                  <span>Newyork City</span>
+                  <h3>{{ "SERVICES.H.Sam Danisley" | translate }}</h3>
+                  <span>{{ "SERVICES.Newyork City" | translate }}</span>
                 </div>
               </div>
               <div class="text-box">
-                <p>
-                  “Owing to the claims of duty or the obligations of business it
-                  will frequently occur that pleasures have to be repudiated and
-                  annoyances accepted always holds”.
-                </p>
+                <p>“{{ "SERVICES.P8" | translate }}”.</p>
               </div>
               <div class="review-box">
                 <ul>
@@ -667,3 +669,4 @@
   </div>
 </section>
 <!--End Testimonial Style3 service page-->
+<app-footer></app-footer>

@@ -260,7 +260,7 @@ li {
 }
 
 .sec-title p {
-  color: #e9212e;
+  color: red;
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
@@ -3061,12 +3061,12 @@ select:focus {
 
 .single-footer-widget {
   position: relative;
-  display: block;
+  display: inline-block;
   overflow: hidden;
 }
 .single-footer-widget .title {
   position: relative;
-  display: block;
+  display: inline-block;
   padding-bottom: 27px;
   margin-top: -1px;
   margin-bottom: 40px;
@@ -12655,7 +12655,6 @@ li .single-footer-contact-info .text p span {
   margin-top: 17px;
 }
 .placeorder-button button:hover {
-    
 }
 
 /*** 
