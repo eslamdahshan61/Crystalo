@@ -3586,6 +3586,7 @@ select:focus {
 
 .main-menu.style2 .navigation > li {
   margin-right: 52px;
+  cursor: pointer;
 }
 .main-menu.style2 .navigation > li:last-child {
   margin-right: 0px;

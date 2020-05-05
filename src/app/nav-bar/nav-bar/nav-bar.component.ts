@@ -411,7 +411,17 @@ h6 {font-family: 'Markazi Text', serif !important;}
   .single-footer-widget .contact-info-box ul {    text-align: end;
   }
   .footer-area .container .row {text-align: center;}
+
+  .main-menu .navigation > li > ul {
+    text-align: center;
+    left: -75px;
+    padding-right: 20px;
+}
 `;
+
+
+
+
 
 function changeLanguageAr() {
   document.head.appendChild(style);
@@ -442,7 +452,7 @@ export class NavBarComponent implements OnInit {
     this.translate.use(language);
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   /* addStyleRTL() {
     document.head.appendChild(style1);
